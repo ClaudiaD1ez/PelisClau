@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 120px auto 100px auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 40px;
+}
+
+/* .card {
+	text-align: center;
+    height: 50px;
+    width: 50px;
+} */
+
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    padding: 1%;
+    text-decoration: none;
+    background-color:#1A5276;
+}
+.nav-botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.botones{
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 4%;
+}
+.botones:hover{
+  border-bottom:2px solid black;
+}
+.botones:active{
+    font-weight: bold;
+}
+#home{
+    font-size: larger;
+}
+.navBar div a{
+    text-decoration: none;
+    color: black;
+
+}
+.divBuscar{
+    margin-top: 0.7%;
+
+}
+.buscar{
+    border:2px solid rgba(0, 0, 255, 0.286);
+    border-radius: 6px;
+    padding: 4px;
+}
+
+.BTNbuscar{
+    border: 2px solid black;
+    border-radius: 10%;
+    background-color: black;
+    color: white;
+}
+
+.inicio{
+    margin-top: 80px;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding-top: 3%;
+    align-items: center;
+    background-color: black;
+    /* visibility:visible; */
+    /* visibility: hidden; */
+}
+.title{
+    background-color: #f2f2f2;
+    background-image: url(http://3.bp.blogspot.com/-V4MJ_8Wt5pY/Ti0g5MvjTzI/AAAAAAAALBg/pU4pN_CbM1g/s1600/avengersassemblebig.jpg);
+    width: 80%;
+    height: 250px;
+    text-align: center;
+    padding-top: 5%;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+}
+#logo{
+    width: 200px;
+    height: 150;
+}
+.listas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    color: white;
+    /* perspective: 1000px; */
+}
+.abajo{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 3%;
+    /* perspective: 1000px; */
+}
+.foto{
+    width: 250px;
+    height: 200;
+}
+.tipo1, .tipo2, .tipo3{
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    width: 300px;
+    height: 250px;
+    padding: 2%;
+    text-align: center;
+    margin: 1%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.9s;
+}
+
+.front, .back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 5%;
+}
+.back{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: rotateY(180deg);
+    background-color: #f2f2f2;
+    color: black;
+    padding:5%;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+.abajo .tipo1:hover{
+    transform: rotateY(180deg);
+}
+.abajo .tipo2:hover{
+    transform: rotateY(180deg);
+}
+.abajo .tipo3:hover{
+    transform: rotateY(180deg);
+}
+
+.overview{
+    /* display: flex;
+    flex-direction: row; */
+    position: absolute;
+    background-color:#f2f2f2 ;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2%;
+    visibility: hidden;
+}
+
+.card:hover .overview{
+    visibility:visible;
+}
+.card-body{
+    background-color:#f2f2f2 ;
+}
+
+footer{
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 3%;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>PelisClau</title>
+</head>
+<body>
+    <header>
+        <nav class="navBar">
+              <img id="logo" src="/fotos/e134c0cc07a74d6a845d83bd58991636__1_-removebg-preview.png">
+              <div class="nav-botones">
+                  <a id="home" class="botones" href="#">HOME</a>
+                  <a id="popular" class="botones" href="#">Popular</a>
+                  <a id="topRated" class="botones"href="#">TopRated</a>
+                  <a id="upcoming" class="botones"href="#">Upcoming</a>
+              </div>
+              <form class="divBuscar">
+                <input id="buscar" class="buscar" type="search" placeholder="Introducir pelicula" aria-label="Search">
+                <button type="button" id="btnBuscar" class="BTNbuscar">Buscar</button>
+              </form>
+        </nav>
+    </header>
+
+<div id="inicio" class="inicio" >
+    <div class="title">
+        <h1>WELCOME TO <img id="logo" src="/fotos/e134c0cc07a74d6a845d83bd58991636__1_-removebg-preview-removebg-preview.jpg"> </h1>
+        <p>Here you can find the best lists of movies.</p>
+    </div>
+
+    <div class="listas">
+        <h5>This are the main lists:</h5>
+        <div class="abajo">
+            <div class="tipo1" id="cardPopular">
+                <div class="front">
+                    <h3>POPULAR</h3>
+                    <img class="foto" src="https://www.elespectador.com/resizer/o_9HRn37yMpeVyLWbb_c4A4hgmQ=/525x350/filters:format(jpeg)/cloudfront-us-east-1.images.arcpublishing.com/elespectador/2JROOHNYGVEOPDHZWWJ565NN54.jpg">    
+                </div>
+                <div class="back">
+                    <h4>The list of the most popular movies. </h4>
+                    <p>In this list you will find the films that are currently being played most often.</p>
+                </div>
+            </div>
+            <div class="tipo2" id="cardReated">
+                <div class="front">
+                    <h3>TOP REATED</h3>
+                    <img class="foto" src="https://www.republica.com/wp-content/uploads/2022/02/Cartel-de-El-Padrino.jpg">
+                </div>
+                <div class="back">
+                    <h4>Top rated movies in history.</h4>
+                    <p>This is the list of the movies that have had the best rating from the public and experts over the years.</p>
+                </div>
+            </div>
+            <div class="tipo3" id="cardComing">
+                <div class="front">
+                    <h3>UP COMING</h3>
+                    <img class="foto" src="https://okdiario.com/img/2022/08/03/bullet-train-sony-pictures-655x368.jpg">
+                </div>
+                <div class="back">
+                    <h4>Currently in theaters.</h4>
+                    <p>Here you can find the newest movies that have just been released.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    <div class="contenedor" id="contenedor"></div>
+
+    <footer>Pagina creada por @Claudia_Diez</footer>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
